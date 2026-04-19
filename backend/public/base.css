@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --matcha-dark: #2f4f3e;
+  --matcha: #4f7a62;
+  --matcha-mid: #5a8f6e;
+  --matcha-light: #8cbea0;
+  --matcha-soft: #d9ebdf;
+
+  --blush: #e7a6b1;
+  --blush-mid: #d4a0af;
+  --blush-soft: #f7d6dc;
+  --blush-pale: #f7eaed;
+  --blush-ghost: #fdf5f7;
+
+  --cream: #f4f8f3;
+  --linen: #e6e2d6;
+  --silk: #edeae0;
+
+  --ink: #2a4434;
+  --ink2: #243b2e;
+  --text-dark: #2c3e35;
+
+  --sage: #a8c4ae;
+  --sage-pale: #d4e8d8;
+  --sage-ghost: #edf5ef;
+  --sage-faint: #f4f9f5;
+
+  --muted: #5c7566;
+  --faint: #9ab0a0;
+  --ghost: #c4d8ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

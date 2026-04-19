@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harbor — Support Resources</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/resources.css">
+</head>
+<body>
+
+  <div class="petals" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">Harbor</div>
+      <a href="index.html">Home</a>
+      <a href="finance.html">Finance</a>
+      <a href="housing.html">Housing</a>
+      <a href="wellbeing.html">Wellbeing</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html" id="loginLink">Log in</a>
+      <a href="dashboard.html" id="dashboardLink" class="signup-btn" style="display:none;">Dashboard</a>
+    </div>
+  </header>
+
+  <section class="res-hero">
+    <div class="res-hero-orbs" aria-hidden="true">
+      <div class="res-orb res-orb-1"></div>
+      <div class="res-orb res-orb-2"></div>
+    </div>
+
+    <svg class="res-hero-branch" width="180" height="140" viewBox="0 0 180 140" fill="none" aria-hidden="true">
+      <path d="M180 0 Q146 24 112 50 Q80 74 46 94 Q22 107 0 118" stroke="#c0788c" stroke-width="1.5" fill="none"/>
+      <path d="M112 50 Q96 30 102 4" stroke="#c0788c" stroke-width=".9" fill="none"/>
+      <ellipse cx="100" cy="4" rx="8" ry="5.5" transform="rotate(-33 100 4)" fill="#e8b4be"/>
+      <ellipse cx="89" cy="-1" rx="6.5" ry="4.5" transform="rotate(13 89 -1)" fill="#d4a0af"/>
+      <ellipse cx="113" cy="0" rx="6.5" ry="4.5" transform="rotate(-17 113 0)" fill="#e8b4be"/>
+    </svg>
+
+    <div class="res-hero-content">
+      <p class="mini-tagline">Support resources</p>
+      <h1 class="res-hero-title">Find the right support for you</h1>
+      <p class="res-hero-sub">
+        Choose the area that best matches what you're going through right now.
+      </p>
+    </div>
+  </section>
+
+  <main class="res-main">
+    <section class="res-hub-section">
+      <div class="res-hub-intro">
+        <h2 class="res-hub-heading">Where would you like to start?</h2>
+      </div>
+      <div class="res-hub-grid">
+
+        <div class="res-hub-card res-hub-finance">
+          <div class="res-hub-accent"></div>
+          <div class="res-hub-body">
+            <div class="res-hub-row1">
+              <div class="res-hub-icon res-hub-icon-finance">💳</div>
+              <h3 class="res-hub-label">Finance</h3>
+            </div>
+            <p class="res-hub-desc">
+              Bursaries, emergency grants, budgeting tools, and funding guidance for students who need financial support.
+            </p>
+            <a class="res-hub-btn" href="finance.html">Explore finance</a>
+          </div>
+        </div>
+
+        <div class="res-hub-card res-hub-housing">
+          <div class="res-hub-accent"></div>
+          <div class="res-hub-body">
+            <div class="res-hub-row1">
+              <div class="res-hub-icon res-hub-icon-housing">🏠</div>
+              <h3 class="res-hub-label">Housing</h3>
+            </div>
+            <p class="res-hub-desc">
+              Tenancy rights, finding accommodation, emergency housing support, and advice.
+            </p>
+            <a class="res-hub-btn" href="housing.html">Explore housing</a>
+          </div>
+        </div>
+
+        <div class="res-hub-card res-hub-wellbeing">
+          <div class="res-hub-accent"></div>
+          <div class="res-hub-body">
+            <div class="res-hub-row1">
+              <div class="res-hub-icon res-hub-icon-wellbeing">🌿</div>
+              <h3 class="res-hub-label">Wellbeing</h3>
+            </div>
+            <p class="res-hub-desc">
+              Mental health guidance, coping strategies, support organisations, and tools.
+            </p>
+            <a class="res-hub-btn" href="wellbeing.html">Explore wellbeing</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="res-hub-note">All resources are publicly available — no account required.</p>
+    </section>
+  </main>
+
+  <script src="js/resources.js"></script>
+</body>
+</html>

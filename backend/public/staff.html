@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harbor - Staff Dashboard</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/staff.css">
+</head>
+
+<body class="staff-dashboard">
+
+  <div class="petals" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">Harbor</div>
+      <a href="index.html">Home</a>
+      <a href="finance.html">Finance</a>
+      <a href="housing.html">Housing</a>
+      <a href="wellbeing.html">Wellbeing</a>
+      <a href="resources.html">Resources</a>
+    </div>
+    <div class="nav-right">
+      <button id="logoutBtn" class="signup-btn" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="staff-shell">
+
+    <section class="staff-header">
+      <div class="staff-header-text">
+        <p class="mini-tagline">🛟 STAFF AREA</p>
+        <h1>Support Requests</h1>
+        <p class="staff-subtitle">
+          Focus on new requests first, then review responded and closed cases when needed.
+        </p>
+      </div>
+
+      <div class="staff-header-stats">
+        <div class="stat-pill">
+          <span class="stat-label">Viewing</span>
+          <span id="statusSummary" class="stat-value">Submitted</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs + actions -->
+    <section class="staff-toolbar">
+      <div class="toolbar-card">
+
+        <div class="tabs" role="tablist" aria-label="Request status tabs">
+          <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-status="submitted">
+            New <span class="tab-count" id="countSubmitted">0</span>
+          </button>
+
+          <button class="tab-btn" type="button" role="tab" aria-selected="false" data-status="responded">
+            Responded <span class="tab-count" id="countResponded">0</span>
+          </button>
+
+          <button class="tab-btn" type="button" role="tab" aria-selected="false" data-status="closed">
+            Closed <span class="tab-count" id="countClosed">0</span>
+          </button>
+        </div>
+
+        <div class="toolbar-right">
+          <button id="refreshBtn" class="primary-btn" type="button">Refresh</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="staff-requests">
+      <div id="requestsContainer" class="requests-grid"></div>
+    </section>
+
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/guard.js"></script>
+  <script>requireStaff();</script>
+  <script src="js/staff.js"></script>
+</body>
+</html>
