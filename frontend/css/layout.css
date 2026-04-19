@@ -1,0 +1,163 @@
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(47, 79, 62, 0.06);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--matcha-dark);
+  letter-spacing: -0.01em;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  gap: 4px;
+}
+
+.nav-right {
+  gap: 12px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--matcha-dark);
+  font-weight: 500;
+  font-size: 13.5px;
+  padding: 5px 11px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.navbar a:hover {
+  color: var(--matcha);
+  background: var(--matcha-soft);
+}
+
+/* =========================
+   DASHBOARD NAVBAR OVERRIDES
+========================= */
+.dash-body .navbar {
+  background: rgba(38, 65, 50, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(122, 171, 138, 0.1);
+}
+
+.dash-body .logo {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--sage-pale);
+}
+
+.dash-body .navbar a {
+  color: rgba(168, 196, 174, 0.65);
+}
+
+.dash-body .navbar a:hover {
+  color: var(--sage-pale);
+  background: rgba(122, 171, 138, 0.1);
+}
+
+.dash-body .signup-btn {
+  background: rgba(122, 171, 138, 0.16);
+  color: var(--sage-pale);
+  border: 1px solid rgba(122, 171, 138, 0.22);
+  box-shadow: none;
+}
+
+.dash-body .signup-btn:hover {
+  background: rgba(122, 171, 138, 0.26);
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  padding: 26px 40px;
+  background: var(--ink);
+  border-top: 1px solid rgba(122, 171, 138, 0.1);
+}
+
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(212, 232, 216, 0.5);
+}
+
+.footer-links {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgba(168, 196, 174, 0.5);
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: color 0.14s, background 0.14s;
+}
+
+.footer-links a:hover {
+  color: var(--sage-pale);
+  background: rgba(122, 171, 138, 0.1);
+}
+
+.footer-note {
+  font-size: 12px;
+  font-style: italic;
+  color: rgba(168, 196, 174, 0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 980px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 18px;
+  }
+
+  .footer {
+    padding: 22px 20px;
+  }
+}
